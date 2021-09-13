@@ -24,7 +24,7 @@ int main() {
 
     double avg_gb_used=GB_used/current_day;
     printf("%0.1f days used , %0.1f days remaining\n",current_day,left_day);
-    printf("Average daily use: %0.1f GB/day\n\n",avg_gb_used);
+    printf("average daily use: %0.1f GB/day\n\n",avg_gb_used);
 
     if(avg_gb_used>0.5){
     float exceed=avg_gb_used*left_day;
@@ -36,9 +36,9 @@ int main() {
     else{
         float lose=total_GB-(left_day*avg_gb_used);
 
-        printf("You are under using your average daily use(0.50 GB/day).\n");
-        printf("Continuing this low usage, you'll lose your data plan by %0.1f GB.\n",lose);
-        printf("To stay above your data plan , use %0.1f GB/day.\n",avg_left_GB);
+        printf("you are under using your average daily use(0.50 GB/day).\n");
+        printf("continuing this low usage, you'll lose your data plan by %0.1f GB.\n",lose);
+        printf("to stay above your data plan , use %0.1f GB/day.\n",avg_left_GB);
 }
 return 0;
 }
